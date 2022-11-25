@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Fun with Agri</title>
+</head>
+<body>
+    <div class="notify">
+        <p class="ntxt">Game Over! You have successfully harvested your crop</p>
+    </div>
+    <div class="farmgeneration"></div>
+    <div class="container">
+        <div class="sidenav">
+            <div class="option" id="gen">
+                <div class="iconContainer">
+                    <ion-icon name="cube-outline"></ion-icon>
+                </div>
+                <div class="category">
+                    <p class="catName">Generate Farmland</p>
+                </div>
+            </div>
+            <div class="option clicks" id="seedselection">
+                <div class="iconContainer">
+                    <ion-icon name="flower-outline"></ion-icon>
+                </div>
+                <div class="category">
+                    <p class="catName">Seed Selection</p>
+                </div>
+            </div>
+            <div class="option ldrone clicks" id="seedItem">
+                <div class="iconContainer">
+                    <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+                <div class="category">
+                    <p class="catName">Sowing</p>
+                </div>
+            </div>
+            <div class="option ldrone clicks" id="waterdrop">
+                <div class="iconContainer">
+                    <ion-icon name="water-outline"></ion-icon>
+                </div>
+                <div class="category">
+                    <p class="catName">Watering</p>
+                </div>
+            </div>
+            <div class="option ldrone clicks" id="man">
+                <div class="iconContainer">
+                    <ion-icon name="sparkles-outline"></ion-icon>
+                </div>
+                <div class="category">
+                    <p class="catName">Manure</p>
+                </div>
+            </div>
+            <div class="option clicks" id="harvest">
+                <div class="iconContainer">
+                    <ion-icon name="archive-outline"></ion-icon>
+                </div>
+                <div class="category">
+                    <p class="catName">Harvest</p>
+                </div>
+            </div>
+        </div>
+        <div class="floatingact">
+        </div>
+        <div class="watersprinkler">
+            <div class="drone">
+                <img src="./assets/drone.jpg" alt="" class="dronimg">
+            </div>
+            <div class="waterlevel">
+            </div>
+        </div>
+        <div class="farmlandContainer">
+            <div class="farmland">
+            </div>
+        </div>
+        <div class="seeds">
+            <div class="close" id="close">
+                <div class="closebars"></div>
+            </div>
+            <div class="seed selected">
+                <div class="seedItem wheat" style="display: block; position:static;"></div>
+                <p class="name">Wheat</p>
+            </div>
+            <div class="seed">
+                <div class="seedItem beetroot" style="display: block; position:static;"></div>
+                <p class="name">Beetroot</p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
